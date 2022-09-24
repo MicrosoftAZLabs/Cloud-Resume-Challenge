@@ -1,0 +1,102 @@
+/* ===============================
+   Author: {YOUR NAME HERE}
+   Date:   {DATE HERE}
+   
+   Notes:
+   Hand coded for Build a Website
+   from Scratch with HTML & CSS
+   by Brad Hussey
+   
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+/* Body */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   width: auto;
+   margin: auto;
+   padding: 5px;
+}
+/* Border */
+
+.border-box {
+   background: #eee;
+   margin: auto;
+   padding: 10px;
+   width:auto;
+   border: solid 1px black;
+}
+
+/* Box positioning */
+.header {
+   width: auto;
+   float: left;
+   padding-left: 5px;
+}
+
+.box {
+   
+   text-decoration-color: azure;
+}
+
+#top-right-box {
+   position: relative;
+   float: right;
+   
+}
+#summaryBox {
+   clear: both;
+}
+
+#lower-box {
+   position: relative;
+
+   
+}
+
+/* Typography */
+
+
+
+/* Header */
+
+
+
+/* Hero */
+
+
+
+/* The Whole Story */
+
+
+
+/* News & Events */
+
+
+
+/* Footer */
+
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
