@@ -66,7 +66,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #03f810;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -93,8 +93,9 @@ header .social li {
    display: inline-block;
    margin: 0 15px;
    padding: 0;
+   
 }
-header .social li a { color: #fff; }
+header .social li a { color: #fff;}
 header .social li a:hover { color: #11ABB0; }
 
 /* scrolldown link */
@@ -169,7 +170,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: rgb(99, 98, 98);
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -203,7 +204,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #fdfdfd;
 }
 #about .profile-pic {
    position: relative;
