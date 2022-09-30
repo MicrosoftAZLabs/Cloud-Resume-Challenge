@@ -1,1 +1,0 @@
-# Cloud-Resume-Challenge
