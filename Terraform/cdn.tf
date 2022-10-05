@@ -6,7 +6,7 @@ resource "azurerm_cdn_profile" "cdn" {
 }
 
 resource "azurerm_cdn_endpoint" "cdn_blog" {
-  name                = "mohitjohriresume"
+  name                = "mohitjohri-resume"
   profile_name        = azurerm_cdn_profile.cdn.name
   location            = azurerm_cdn_profile.cdn.location
   resource_group_name = azurerm_resource_group.rg.name
