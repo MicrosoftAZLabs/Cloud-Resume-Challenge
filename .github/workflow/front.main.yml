@@ -1,0 +1,38 @@
+name: deploy_frontend
+# Deploys when push is made from frontend folder
+
+on:
+    push:
+        branches: [ main ]
+        paths: 
+        - 'StaticWebsite/**'
+    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:            
+    - uses: actions/checkout@v2
+    - name: login with azure 
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.30.0
+        inlineScript: |
+            az storage blob upload-batch --account-name resumechallengeaz1234  -d '$web' -s StaticWebsite/
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.30.0
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "mohitjohri-resume" --name "mohitjohri-resume" --resource-group "CloudResumeChallenge1234"
+
+  # Azure logout 
+    - name: logout
+      run: |
+            az logout
