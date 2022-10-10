@@ -30,7 +30,7 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "mohitjohri-resume" --name "mohitjohri-resume" --resource-group "CloudResumeChallenge1234"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "mohitjohri" --name "mohitjohri-resume" --resource-group "CloudResumeChallenge1234"
 
   # Azure logout 
     - name: logout
