@@ -19,7 +19,7 @@ CI/CD
   1. Contains the Website.
   2. `main.js` contains visitor counter code.
   
-- WebsiteViewCounter
+- StatisWebsiteViewCounter
   1. Api which connects with cosmosDb to fetch visitor count 
 
 - Terraform
