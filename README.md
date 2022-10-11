@@ -10,3 +10,20 @@ Frontend
 Backend
 Tests
 CI/CD
+
+## Folder Structure
+- .github/workflows
+  1. CI/CD files are in the workflow directory
+
+- StaticWebsite folder 
+  1. Contains the Website.
+  2. `main.js` contains visitor counter code.
+  
+- WebsiteViewCounter
+  1. Api which connects with cosmosDb to fetch visitor count 
+
+- Terraform
+  1. `backend.sh` to create Storage Account and Blob Container for the terraform state.
+  2. Terraform files to create infra for the Static website.
+
+
