@@ -19,8 +19,8 @@ CI/CD
   1. Contains the Website.
   2. `main.js` contains visitor counter code.
   
-- StatisWebsiteViewCounter
-  1. Api which connects with cosmosDb to fetch visitor count 
+- StaticWebsiteViewCounter
+  1. Api which connects with cosmos DB to fetch visitor count 
 
 - Terraform
   1. `backend.sh` to create Storage Account and Blob Container for the terraform state.
