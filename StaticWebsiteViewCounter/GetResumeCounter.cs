@@ -13,7 +13,7 @@ using System.Text;
 namespace Company.Function
 {
     public static class GetResumeCounter
-    {   //adding comment
+    {   
         [FunctionName("GetResumeCounter")]
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
