@@ -23,13 +23,8 @@ CI/CD
   1. Api which connects with cosmos DB to fetch visitor count 
 
 - Terraform
-  1. frontend
-     1. 
-     2. Terraform files to create infra for the Static website.
-  2. backend
-     1. dummy
-     2. dummy
-  3. backend.sh
-     1. `backend.sh` to create Storage Account and Blob Container for the terraform state.
+  1. frontend- Terraform files to create Azure infra for the Static website.
+  2. backkend- Terrafrom files to create a function app with cosmos db.
+  3. backend.sh- Create Storage Account and Blob Container for the terraform state for frontend & backend.
 
 
