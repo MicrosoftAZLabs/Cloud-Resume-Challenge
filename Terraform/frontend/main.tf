@@ -1,26 +1,23 @@
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "rg" {
-  name     = "CloudResumeChallenge1234"
-  location = "eastus"
+  name  = var.rg-name
+  location = var.location
   tags = {
     Purpose = "Personal Cloud Space"
   }
 }
 
 resource "azurerm_storage_account" "blog_storage" {
-  name                     = "resumechallengeaz1234"
-  resource_group_name      = azurerm_resource_group.rg.name
+  name                = var.storage-account-name
+  resource_group_name = azurerm_resource_group.rg.name
+ 
   location                 = azurerm_resource_group.rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-  account_kind             = "StorageV2"
+  account_tier             = var.account_tier
+  account_replication_type = var.account_replication_type
+  account_kind             = var.account_kind
 
   static_website {
-    index_document     = "index.html"
-    error_404_document = "404.html"
+    index_document     = var.index_document
+    error_404_document = var.error_document
   }
 
   tags = {

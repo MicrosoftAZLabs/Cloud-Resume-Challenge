@@ -1,12 +1,12 @@
 resource "azurerm_cdn_profile" "cdn" {
-  name                = "mohitjohri"
-  location            = "global"
+  name                = var.cdnprofile-name
+  location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  sku                 = "Standard_Microsoft"
+  sku                 = var.cdnprofile-sku
 }
 
 resource "azurerm_cdn_endpoint" "cdn_blog" {
-  name                = "mohitjohri-resume"
+  name                = var.cdn-endpoint-name
   profile_name        = azurerm_cdn_profile.cdn.name
   location            = azurerm_cdn_profile.cdn.location
   resource_group_name = azurerm_resource_group.rg.name
