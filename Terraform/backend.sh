@@ -15,7 +15,10 @@ ACCOUNT_KEY=$(az storage account keys list --resource-group $RESOURCE_GROUP_NAME
 
 # Create blob container
 az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOUNT_NAME --account-key $ACCOUNT_KEY
+# Create blob container- Backend statefile
+az storage container create --name $CONTAINER_NAME_BACKEND --account-name $STORAGE_ACCOUNT_NAME --account-key $ACCOUNT_KEY
 
 echo "storage_account_name: $STORAGE_ACCOUNT_NAME"
 echo "container_name: $CONTAINER_NAME"
 echo "access_key: $ACCOUNT_KEY"
+echo "container_name_backend: $CONTAINER_NAME_BACKEND"
