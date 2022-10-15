@@ -21,6 +21,7 @@ CI/CD
   
 - StaticWebsiteViewCounter
   1. Api which connects with cosmos DB to fetch visitor count 
+  2. Tests for Api
 
 - Terraform
   1. frontend- Terraform files to create Azure infra for the Static website.
