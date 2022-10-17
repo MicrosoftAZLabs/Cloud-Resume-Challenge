@@ -345,12 +345,12 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: MicrosoftAzure 2s ease;
 }
 .DockerKubernetes {
-  	width: 50%;
+  	width: 60%;
   	-moz-animation: DockerKubernetes 2s ease;
   	-webkit-animation: DockerKubernetes 2s ease;
 }
 .IAC {
-  	width: 50%;
+  	width: 60%;
   	-moz-animation: IAC 2s ease;
   	-webkit-animation: IAC 2s ease;
 }
